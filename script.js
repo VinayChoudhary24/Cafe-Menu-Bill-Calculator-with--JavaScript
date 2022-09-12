@@ -1,5 +1,5 @@
 /* 
-🌟 APP: Tip Calculator
+🌟 APP: Bill-Tip Calculator
 
 These are the 3 functions we must use 👇
 =========================================
