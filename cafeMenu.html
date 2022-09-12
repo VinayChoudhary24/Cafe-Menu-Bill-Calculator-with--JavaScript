@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cafe</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        .menu {
+            border: 1px solid rgb(145, 53, 53);
+        }
+        .menu__heading > p > span {
+            font-size: large;
+        }
+        .menu__orderinformation {
+            border: 1px solid rgb(56, 87, 26);
+        }
+        .menu__sandwiches {
+            border: 1px solid slateblue;
+        }
+        .menu__sandwichselection {
+            margin: 20px;
+            border-bottom: 2px solid lightslategrey;
+        }
+        .menu__extrabread {
+            margin: 20px;
+        }
+        .menu__snack {
+            border: 1px solid darkkhaki;
+        }
+        .menu__snackselection {
+            margin: 20px;
+        }
+        .menu__drink {
+            border: 1px solid rgb(123, 123, 228);
+        }
+        .menu__drinkselection {
+            margin: 20px;
+            border-bottom: 2px solid lightslategrey;
+        }
+        .menu__extradrink {
+            margin: 20px;
+        }
+        .orderBtn {
+            margin: 20px;
+            border-radius: 6px;
+            border: 1px solid rgb(250, 150, 29);
+            color: red;
+            background-color: rgb(250, 150, 29);
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+   <div class="menu">
+    <div class="menu__heading">
+        <center>
+            <h1><strong>Madani Cafe</strong></h1>
+            <h2><strong>Madani Tea Lunch Special</strong></h2>
+            </center>
+            <p>Monday through Friday<br>
+               11am-3pm<br>
+               <img src="https://www.kindpng.com/picc/m/573-5735332_outline-picture-of-rupee-symbol-png-download-black.png" width="17" height="17"
+               alt="rupeeicon"
+               /><span>500 Plus Tax</span><br>
+            <br>
+            Includes Sandwich, Snacks and Drinks.</p>
+    </div>
+    <form>
+        <div class="menu__orderinformation"><br>
+            <label style="margin: 10px;" for="name" >Name</label><br>
+            <input style="margin: 10px;" id="name" 
+            type="text"
+            placeholder="mike callam" /><br>
+            <br>
+            <div>
+                <label for="toeat" ></label>
+
+                <div>
+                    <input id="here" type="radio" name="toeat" value="here" />
+                    <label for="here" >Here</label><br>
+                    <input id="togo" type="radio" name="toeat" value="togo" />
+                    <label for="togo" >To go</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu__sandwiches">
+            <label style="font-size: large;" for="sandwiches" ><i>Sandwiches</i></label>
+
+            <div class="menu__sandwichselection">
+                <label for="monday" ><strong>Monday</strong></label><br>
+                <input id="monday" type="radio" name="sandwiches" value="tomato mozzarella" /><span>Tomato Mozzarella</span><br>
+                <input id="monday" type="radio" name="sandwiches" value="chicken salad" /><span>Chicken Salad</span><br>
+                <br>
+
+                <label for="tuesday" ><strong>Tuesday</strong></label><br>
+                <input id="tuesday" type="radio" name="sandwiches" value="greek salad wrap" /><span>Greek Salad Wrap</span><br>
+                <input id="tuesday" type="radio" name="sandwiches" value="toto wrap" /><span>Toto Wrap</span><br>
+                <br>
+
+                <label for="wednesday" ><strong>Wednesday</strong></label><br>
+                <input id="wednesday" type="radio" name="sandwiches" value="red pepper hummus" /><span>Red Pepper Hummus</span><br>
+                <input id="wednesday" type="radio" name="sandwiches" value="roasted turkey" /><span>Roasted Turkey</span><br>
+                <br>
+
+                <label for="thursday" ><strong>Thursday</strong></label><br>
+                <input id="thursday" type="radio" name="sandwiches" value="carrot-ginger hummus wrap" /><span>Carrot-Ginger Hummus Wrap</span><br>
+                <input id="thursday" type="radio" name="sandwiches" value="egg salad" /><span>Egg Salad</span><br>
+                <br>
+
+                <label for="friday" ><strong>Friday</strong></label><br>
+                <input id="friday" type="radio" name="sandwiches" value="dado wrap" /><span>Dado Wrap</span><br>
+                <input id="friday" type="radio" name="sandwiches" value="tuna salad" /><span>Tuna Salad</span><br>
+                <br>
+            </div>
+            <div class="menu__extrabread">
+                <input id="addons" type="checkbox" value="glutten free bread" />
+                <label for="addons" >Glutten Free Bread (100/- extra)</label>
+            </div>
+        </div>
+
+        <div class="menu__snack">
+            <label style="font-size: large;" for="snack" ><i>Snack</i></label>
+            
+            <div class="menu__snackselection">
+                <label for="item" >Snacks</label><br>
+                <input id="item" type="radio" name="snack" value="apple" /><span>Apple</span><br>
+                <input id="item" type="radio" name="snack" value="banana" /><span>Banana</span><br>
+                <input id="item" type="radio" name="snack" value="potato chips" /><span>Potato Chips</span><br>
+            </div>
+        </div>
+
+        <div class="menu__drink">
+            <label style="font-size: large;" for="drink" ><i>Drinks</i></label><br>
+
+            <div class="menu__drinkselection">
+                <select id="drink" name="drink" >
+        
+                    <option value="0" >Hot Black Tea - Keemun</option>
+                    <option value="1" >Hot Black Tea - Decaf keemun</option>
+                    <option value="2" >Iced Black Tea - Keemun</option>
+                    <option value="3" >Iced Black Tea - Decaf Keemun</option>
+                    
+                </select><br><br> 
+            </div>
+            <div class="menu__extradrink">
+                <input id="extradrink" type="checkbox" />
+                <label for="extradrink" >Large drink (75/- extra)</label>
+            </div>
+        </div>
+
+        <button class="orderBtn" type="submit">Place Order</button>
+    </form> 
+   </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
