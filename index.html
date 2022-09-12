@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bill Tip Calculator</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- For Bill Total -->
+    <div class="billContainer">
+        <!-- for bill amount and bill input -->
+        <div class="container" id="topContainer">
+            <div class="title">Bill Amount</div>
+            <div class="inputContainer">
+                <span>$</span>
+                <!-- Call Function calculateBill for input -->
+                <input
+                onkeyup="calculateBill()"
+                type="text"
+                id="billInput"
+                placeholder="0.00" 
+                />
+            </div>
+        </div>
+        <!-- For tip Amount and tip input -->
+        <div class="container">
+            <div class="title">Tip</div>
+            <div class="inputContainer">
+                <span>%</span>
+                <input
+                onkeyup="calculateBill()"
+                type="text"
+                id="tipInput"
+                placeholder="10" 
+                />
+            </div>
+        </div>
+
+        <!-- For People Increase -->
+        <div class="container" id="bottomContainer">
+            <div class="splitContainer">
+                <div class="title">People</div>
+                <div class="controls">
+                    <span class="buttonContainer">
+                        <button class="splitBtn" onclick="increasePeople()" >
+                           <span class="btnText">+</span>
+                        </button>
+                    </span>
+
+                    <!-- For numberOfPeople -->
+                    <span class="splitAmount" id="numberOfPeople" >1</span>
+
+                    <!-- For people Decrease -->
+                    <span class="buttonContainer">
+                        <button class="splitBtn" onclick="decreasePeople()" >
+                           <span class="btnText">-</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <!-- For Total Amount per Person -->
+            <div class="totalContainer">
+                <div class="title">Total Per Person</div>
+                <div class="total" id="perPersonTotal">$0.00</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

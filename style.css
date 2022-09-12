@@ -1,0 +1,189 @@
+body {
+    background-color: whitesmoke;
+}
+
+/* This is the  Main Container, it contains all the DIV'S */
+.billContainer {
+    height: 500px;
+    width: 360px;
+    color: #db9b2c;
+    background: #272639;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 50px auto;
+}
+
+/* To Access ID we use HASH # */
+#topContainer {
+    margin-top: 4rem;
+}
+
+/* This is the Bill and Tip Container, they have the same class Name */
+.container {
+    margin-top: 1.4rem;
+}
+
+/* this is for the title of every container */
+.title {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+
+/* This is for the  both Input Containers */
+.inputContainer {
+    background: #353959;
+    border-radius: 1.4rem;
+    padding: 0 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Access Multiple ID's Together */
+/* This is for the Input Text */
+#billInput,
+#tipInput {
+    color: #928788;
+    /* color: #c59137; */
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: none;
+}
+
+/* This is for the Increase, decrease button Container */
+.buttonContainer {
+    height: 1.6rem;
+    width: 1.6rem;
+    background: #a6938c;
+    display: grid;
+    place-items: center;
+    border-radius: 35%;
+}
+
+/* This is for the Buttons */
+.splitBtn {
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* buttons containers */
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+/* This is button Text to Display */
+.btnText {
+    color: #1c1f37 !important;
+}
+
+/* This is for the numberOfPeople Count to Display */
+.splitAmount {
+    font-size: 1.5rem;
+    margin: 0.8rem;
+}
+
+/* this is the bottomConatainer, it contains buttons, people count and total per person */
+#bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 240px;
+}
+
+/* this is total per person container */
+.totalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* this is for amount to be displayed */
+.total {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
